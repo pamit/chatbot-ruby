@@ -16,7 +16,7 @@ module Chatbot
           return if data.text.empty?
           # ws = WatsonApi::Service.instance.workspaces
           ws_id = "dbb8a837-10fa-42a2-a569-392b7ea4c5ba" # ws.workspaces.first.workspace_id
-          msg = WatsonApi::Service.instance.message(ws_id, data.text, nil)
+          msg = WatsonApi::Service.instance.message(ws_id, data.text, nil)              
           client.say(channel: data.channel, text: "#{msg.output.text.join(' ')}")
         rescue Exception => e
           client.say(channel: data.channel, text: "Sorry, something went wrong")
