@@ -1,0 +1,7 @@
+*.swp
+*~
+.project
+.DS_Store
+.byebug_history
+.ruby-version
+.env
