@@ -5,16 +5,17 @@ Dotenv.load
 
 require 'chatbot-ruby'
 require 'web'
+require 'logger'
 
-
+$logger = Logger.new(STDOUT)
 Thread.abort_on_exception = true
 
 Thread.new do
   begin
     Chatbot::Bot.run
   rescue Exception => e
-    STDERR.puts "ERROR: #{e}"
-    STDERR.puts e.backtrace
+    $logger.error "ERROR: #{e}"
+    $logger.error e.backtrace
     raise e
   end
 end
