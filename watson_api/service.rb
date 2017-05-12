@@ -36,7 +36,6 @@ module WatsonApi
         else
           errors = "error!"
         end
-
         return result
       end
   end
