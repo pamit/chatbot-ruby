@@ -1,6 +1,6 @@
 module Chatbot
   ABOUT = <<-ABOUT
-    #{Chatbot::VERSION}
+    Simple Slack-Watson chatbot integration
     https://github.com/pamit/chatbot-ruby
   ABOUT
 end

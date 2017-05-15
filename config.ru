@@ -1,12 +1,11 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 require 'dotenv'
-Dotenv.load
-
 require 'chatbot-ruby'
 require 'web'
 require 'logger'
 
+Dotenv.load
 $logger = Logger.new(STDOUT)
 Thread.abort_on_exception = true
 
