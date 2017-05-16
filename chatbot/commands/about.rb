@@ -1,7 +1,9 @@
 module Chatbot
   module Commands
-    class About < SlackRubyBot::Commands::Base
-      command 'about' do |client, data, _match|
+    class Default < SlackRubyBot::Commands::Base
+      match(/^(?<bot>\w*)$/)
+
+      def self.call(client, data, match)
         client.say(channel: data.channel, text: Chatbot::ABOUT)
       end
     end

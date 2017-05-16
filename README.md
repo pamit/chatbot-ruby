@@ -1,8 +1,10 @@
 ChatbotRuby
 =============
 
+## About
+
+A simple bot, integrating IBM Watson Conversation with a Slack bot
+
 ## Usage
 
-SLACK_API_TOKEN=... rackup config.ru
-OR
-foreman start
+rackup config.ru -s Puma OR foreman start

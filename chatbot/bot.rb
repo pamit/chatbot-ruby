@@ -1,6 +1,5 @@
-require 'chatbot/commands/hi'
+require 'chatbot/commands/greeting'
 require 'chatbot/commands/about'
-require 'chatbot/commands/ping'
 require 'chatbot/about'
 
 module Chatbot
@@ -13,11 +12,7 @@ module Chatbot
         desc 'About the bot'
       end
 
-      command 'ping' do
-        desc 'The famous ping-pong operation'
-      end
-
-      command 'hi' do
+      command 'greeting' do
         desc 'The greeting flow'
       end
     end
