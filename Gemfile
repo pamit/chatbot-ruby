@@ -12,7 +12,7 @@ gem 'sinatra'
 gem 'dotenv'
 
 group :development, :test do
-  gem 'rake', '~> 10.4'
+  gem 'rake', '~> 12.3'
   gem 'foreman'
 end
 
