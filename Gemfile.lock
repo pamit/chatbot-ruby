@@ -50,7 +50,7 @@ GEM
     mustermann (1.0.0)
     nio4r (2.0.0)
     puma (3.8.2)
-    rack (2.0.2)
+    rack (2.2.3)
     rack-protection (2.0.0)
       rack
     rack-test (0.6.3)
