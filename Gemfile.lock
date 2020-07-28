@@ -47,11 +47,12 @@ GEM
     minitest (5.10.2)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
-    mustermann (1.0.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     nio4r (2.0.0)
     puma (3.8.2)
     rack (2.2.3)
-    rack-protection (2.0.0)
+    rack-protection (2.0.2)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -69,10 +70,11 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
-    sinatra (2.0.0)
+    ruby2_keywords (0.0.2)
+    sinatra (2.0.2)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.0)
+      rack-protection (= 2.0.2)
       tilt (~> 2.0)
     slack-ruby-bot (0.10.1)
       hashie
@@ -87,7 +89,7 @@ GEM
       websocket-driver
     thor (0.19.4)
     thread_safe (0.3.6)
-    tilt (2.0.7)
+    tilt (2.0.10)
     timers (4.1.2)
       hitimes
     tzinfo (1.2.3)
